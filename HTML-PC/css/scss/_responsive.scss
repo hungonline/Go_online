@@ -1,0 +1,43 @@
+@media (max-width:1199px) {
+    .mb90 {
+        margin-bottom: 60px;
+    }
+
+    .title_cate {
+        font-size: 25px
+    }
+}
+
+@media (max-width:991px) {
+    .list-article {
+        justify-content: center
+    }
+}
+
+@media (max-width:767px) {
+    .list-article {
+        .article-item {
+            .box-img {
+                width: 150px;
+                float: left;
+                margin: 0 15px 0 0;
+            }
+
+            .box-text {
+                overflow: hidden;
+            }
+
+            .description {
+                display: none
+            }
+
+            margin-bottom: 25px;
+
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+    }
+}
