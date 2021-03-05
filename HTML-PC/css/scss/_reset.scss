@@ -14,11 +14,11 @@ body {
 }
 
 
-@media (min-width:1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
+// @media (min-width:1200px) {
+//     .container {
+//         max-width: 1200px;
+//     }
+// }
 
 .container {
     position: relative;
@@ -139,9 +139,11 @@ select.form-control {
     transition-duration: 200ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-    @include placeholder{
+
+    @include placeholder {
         color: #A7A9AC;
     }
+
     &:focus,
     &:active {
         outline: 0;
@@ -149,7 +151,11 @@ select.form-control {
         border: 1px solid var(--blue700);
     }
 }
-textarea.form-control{padding-top: 10px;}
+
+textarea.form-control {
+    padding-top: 10px;
+}
+
 .form_main .input_element {
     width: 100%;
     float: left;
@@ -225,7 +231,8 @@ textarea.form-control{padding-top: 10px;}
     &.bold {
         font-weight: bold;
     }
-    &.full{
+
+    &.full {
         width: 100%;
     }
 }

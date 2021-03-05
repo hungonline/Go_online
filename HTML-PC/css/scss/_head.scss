@@ -1,7 +1,12 @@
 .wrap-main-nav {
-    background: #111;
-    z-index: 989;
-    padding: 0 60px;
+    // z-index: 989;
+    // position: fixed;
+    width: 100%;
+    padding: 30px 0 0 0;
+
+    .container {
+        max-width: 1600px;
+    }
 
     .icon-svg {
         color: var(--gray1);
@@ -9,11 +14,6 @@
 
     &.pin {
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo {
-        width: 260px;
-        margin: -10px 0 0 0;
     }
 
     &>.container {
@@ -32,7 +32,7 @@
 
             &>li {
                 display: inline-block;
-                margin-left: 30px;
+                margin-left: 40px;
 
 
                 h3 {
@@ -40,9 +40,9 @@
                 }
 
                 a {
-                    font: 400 16px var(--font1);
-                    color: #A7A9AC;
-                    padding: 30.5px 0;
+                    font: 400 18px var(--font1);
+                    color: #fff;
+                    padding: 10px 0;
                     display: inline-block;
                     position: relative;
                 }
@@ -110,13 +110,15 @@
                         box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
                         background: #373839;
                         box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.2);
+
                         h3 {
                             font-size: 30px;
                             color: #fff;
                             margin-bottom: 25px;
                             font-weight: bold;
 
-                            svg,img {
+                            svg,
+                            img {
                                 display: block;
                                 width: 40px;
                                 height: 40px;
@@ -258,9 +260,6 @@
     .right-head {
         display: flex;
         align-items: center;
-        position: absolute;
-        right: 60px;
-        top: 18px;
 
         a {
             margin-left: 10px;
@@ -509,7 +508,11 @@
                         border-top: 1px solid #eaeaea;
                         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
                         margin: 0;
-                        img{display: none;}
+
+                        img {
+                            display: none;
+                        }
+
                         h3 {
                             font-size: 16px;
                             color: #222;
@@ -520,6 +523,7 @@
                         &>li {
                             position: relative;
                             max-width: 100%;
+
                             a {
                                 border-bottom: 1px solid #e5e5e5;
                             }
