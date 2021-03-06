@@ -6,9 +6,9 @@
 
 body {
     margin: 0 auto;
-    color: #58595B;
+    color: #313131;
     font-family: var(--font1);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     background: var(--white);
 }
@@ -176,21 +176,25 @@ textarea.form-control {
 }
 
 .btn-default {
-    height: 42px;
-    line-height: 42px;
+    height: 36px;
+    line-height: 36px;
     display: inline-block;
-    border: 1px solid #58595B;
-    padding: 0 30px;
-    color: #58595B;
-    font-size: 16px;
+    border-radius: 30px;
+    padding: 0 50px;
+    color: #fff;
+    font-size: 14px;
     text-align: center;
     transition: 0.4s ease;
-
+    background: #43457B;
     &:hover {
         background: #111111;
         color: #fff;
     }
-
+    &.green{
+        background: #2CBA68;
+        color: #fff;
+        padding: 0 40px;
+    }
     &.yellow {
         background: var(--yellow);
         color: #58595B;
@@ -264,7 +268,7 @@ textarea.form-control {
     float: right;
 }
 
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{line-height: 1.4;}
 
 html {
     -webkit-text-size-adjust: none;
@@ -349,7 +353,9 @@ html {
 .space_bottom_5 {
     margin-bottom: 10px;
 }
-
+.mb0 {
+    margin-bottom: 0!important;
+}
 .mt5 {
     margin-top: 5px;
 }
@@ -412,6 +418,9 @@ html {
 
 .mb90 {
     margin-bottom: 90px;
+}
+.mb100 {
+    margin-bottom: 100px;
 }
 
 .space_bottom_10 {

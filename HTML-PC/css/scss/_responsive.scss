@@ -1,3 +1,9 @@
+@media (max-width:1280px) {
+    .mb100{
+        margin-bottom: 60px;
+    }
+}
+
 @media (max-width:1199px) {
     .mb90 {
         margin-bottom: 60px;
@@ -18,7 +24,7 @@
     .list-article {
         .article-item {
             .box-img {
-                width: 150px;
+                width: 140px;
                 float: left;
                 margin: 0 15px 0 0;
             }
@@ -26,7 +32,7 @@
             .box-text {
                 overflow: hidden;
             }
-
+            .title-new{font-size: 18px;}
             .description {
                 display: none
             }

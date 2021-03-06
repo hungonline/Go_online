@@ -35,71 +35,71 @@ body::-webkit-scrollbar-track {
     margin-bottom: 30px;
 }
 
-.title_cate {
-    font-size: 32px;
-    color: #58595B;
+.title-cate{
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 20px;
-
-    &.ic1 {
-        span {
-            background: url(images/graphics/bg-title1.png) no-repeat top 0px left 0px;
-            background-size: 60px;
-            padding: 20px 0 10px 15px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    span{
+        position: relative;
+        &::before{
+            content: "";
+            background: #7DAF35;
+            width: 105px;
+            height: 5px;
+            position: absolute;
+            bottom: -40px;
         }
     }
-
-    &.ic2 {
-        span {
-            background: url(images/graphics/bg-title2.png) no-repeat top 0px left 0px;
-            background-size: 45px;
-            padding: 13px 0 0px 20px;
-            display: block;
-            position: relative;
-
-            &::before {
-                content: "";
-                background: #A7A9AC;
-                width: 100px;
-                height: 3px;
-                position: absolute;
-                bottom: -5px;
-                left: 28px;
+    &.center{
+        text-align: center;
+        span{
+            &::before{
+                left: 50%;
+                margin-left: -52px;
             }
         }
     }
-
-    &.ic3 {
-        span {
-            background: url(images/graphics/bg-title3.png) no-repeat top 0px left 0px;
-            background-size: 60px;
-            padding: 20px 0 10px 22px;
-            display: block;
-            position: relative;
-
-            &::before {
-                content: "";
-                background: #A7A9AC;
-                width: 80px;
-                height: 3px;
-                position: absolute;
-                bottom: 26px;
-                left: 220px;
+    &.white{
+        color: #fff;
+        span{
+            &::before{background: #fff;}
+        }
+    }
+    @media (max-width:1280px) {
+        font-size: 30px;
+        margin-bottom: 40px;
+        padding-bottom: 25px;
+        span{
+            &::before{
+                bottom: -30px;
+                height: 4px;
             }
         }
     }
-
-    &.ic4 {
-        span {
-            background: url(images/graphics/bg-title4.png) no-repeat top 0px right 0px;
-            background-size: 60px;
-            padding: 20px 35px 10px 0;
-            position: relative;
+    @media (max-width:576px) {
+        font-size: 25px;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        span{
+            &::before{
+                bottom: -20px;
+                height: 3px;
+            }
         }
     }
-
 }
 
+.title-line{
+    font-size: 26px;
+    border-bottom:2px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    @media (max-width:991px) {
+        font-size: 22px;
+    }
+}
 
 .check-list {
     padding-left: 30px;
@@ -247,7 +247,7 @@ body::-webkit-scrollbar-track {
 }
 
 .article-item {
-    color: #58595B;
+    color: #313131;
 
     &::after {
         content: "";
@@ -256,7 +256,7 @@ body::-webkit-scrollbar-track {
     }
 
     a {
-        color: #58595B;
+        color: #313131;
     }
 
     .box-img {
@@ -299,11 +299,13 @@ body::-webkit-scrollbar-track {
     }
 
     .title-new {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 10px;
         line-height: 1.4;
     }
-
+    .description{
+        font-size: 15px;color: #313131;
+    }
     &.small {
         margin-bottom: 24px;
 
@@ -343,15 +345,16 @@ body::-webkit-scrollbar-track {
     &:hover {
         .title-new {
             a {
-                color: var(--yellow-hover);
+                color: var(--green);
             }
         }
     }
 }
 
 .pagination {
-    justify-content: center;
-
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    margin-top: 30px;
     .page-item {
         margin-left: 8px;
 
@@ -369,7 +372,7 @@ body::-webkit-scrollbar-track {
 
             &:hover,
             &.active {
-                background: var(--yellow);
+                background: var(--green);
                 color: #fff;
             }
 

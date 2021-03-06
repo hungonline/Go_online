@@ -15,6 +15,7 @@
     </title>
     <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
         rel="shortcut icon" />
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" media="all" />
@@ -24,140 +25,505 @@
 
 <body class="homepage">
 
-    <section class="banner-home clearfix">
-        <div id="wrap-main-nav" class="section wrap-main-nav">
-            <div class="container">
-                <div class="align-center space-between flex">
-                    <div class="wrap-left">
-                        <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
-                        <h1 class="logo"><a href="#" title="#"><img src="images/graphics/logo.svg" /> </a></h1>
-                    </div>
-                    <div class="wrap-right align-center flex">
-                        <nav class="main-nav">
-                            <ul class="parent">
-                                <li class="active"><a href="" title="Trang chủ">Trang chủ</a></li>
-                                <li><a href="" title="Giới thiệu">Giới thiệu</a></li>
-                                <li><a href="" title="">Giải pháp hỗ trợ</a></li>
-                                <li><a href="" title="">Gian hàng Việt</a></li>
-                                <li><a href="" title="">Tin tức</a></li>
-                                <li><a href="" title="">FAQs</a></li>
-                                <li><a href="" title="">Liên hệ/Đăng ký</a></li>
-                            </ul>
-                        </nav>
-                        <div class="right-head">
-                            <div class="search-btn">
-                                <svg class="icon-svg">
-                                    <use xlink:href="images/icons/icon.svg#search"></use>
-                                </svg>
-                                <svg class="icon-svg close">
-                                    <use xlink:href="images/icons/icon.svg#close2"></use>
-                                </svg>
-                            </div>
-                            <a href="#" class="hotline">
-                                <img src="images/icons/phone.svg" />
-                                HOTLINE: 19001000
-                            </a>
-                        </div>
-                    </div>
-
+    <section id="wrap-main-nav" class="section wrap-main-nav clearfix">
+        <div class="container">
+            <div class="align-center space-between flex">
+                <div class="wrap-left">
+                    <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
+                    <h1 class="logo"><a href="#" title="#"><img src="images/graphics/logo.svg" /> </a></h1>
                 </div>
-                <div class="search-wrap">
-                    <div class="container">
-                        <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
-                        <button type="submit" class="search-box__btn">
+                <div class="wrap-right align-center flex">
+                    <nav class="main-nav">
+                        <ul class="parent">
+                            <li class="active"><a href="home.html" title="Trang chủ">Trang chủ</a></li>
+                            <li><a href="gioithieu.html" title="Giới thiệu">Giới thiệu</a></li>
+                            <li><a href="giai-phap.html" title="">Giải pháp hỗ trợ</a></li>
+                            <li><a href="gian-hang.html" title="">Gian hàng Việt</a></li>
+                            <li><a href="new.html" title="">Tin tức</a></li>
+                            <li><a href="faq.html" title="">FAQs</a></li>
+                            <li><a href="dang-ky.html" title="">Liên hệ/Đăng ký</a></li>
+                        </ul>
+                    </nav>
+                    <div class="right-head">
+                        <div class="search-btn">
                             <svg class="icon-svg">
                                 <use xlink:href="images/icons/icon.svg#search"></use>
                             </svg>
-                        </button>
+                            <svg class="icon-svg close">
+                                <use xlink:href="images/icons/icon.svg#close2"></use>
+                            </svg>
+                        </div>
+                        <div class="search-wrap">
+                            <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
+                            <button type="submit" class="search-box__btn">
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/icons/icon.svg#search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="hotline">
+                            <img src="images/icons/phone.svg" />
+                            HOTLINE: 19001000
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container text-post">
-            <h1 class="title">
-                CHƯƠNG TRÌNH HỖ TRỢ DOANH NGHIỆP </br>
-                ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ QUỐC GIA
-            </h1>
-        </div>
     </section>
-
-
     
-<section class="clearfix mb90">
-    <div class="container">
 
+<section class="banner-home clearfix">
+    <div class="container text-post">
+        <h1 class="title wow fadeInUpSlow">
+            CHƯƠNG TRÌNH HỖ TRỢ DOANH NGHIỆP </br>
+            ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ QUỐC GIA
+        </h1>
+        <div class="slogan wow fadeInUpSlow">
+            <img src="images/graphics/banner.png">
+        </div>
     </div>
 </section>
 
+<section class="home-section1 mb100 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb40 wow fadeInLeftSlow">
+                <img src="images/graphics/img1.png">
+            </div>
+            <div class="col-md-6 wow fadeInRightSlow">
+                <h2 class="title-cate"><span>Giới thiệu</span></h2>
+                <p>
+                    GoOnline được triển khai theo “Đề án Phát triển nền tảng ứng dụng thương mại điện tử trong các tình huống khẩn cấp” do Cục Thương mại điện tử và Kinh tế số chủ trì, đầu mối, phối hợp với các sàn thương mại điện tử lớn, các doanh nghiệp cung ứng hạ tầng cho Thương mại điện tử
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section2 mb100 clearfix">
+    <div class="container">
+        <h2 class="title-cate center wow fadeInUpSlow"><span>Giải pháp tiêu biểu</span></h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="itemt bg-blue">
+                    <div class="row align-center">
+                        <div class="col-md-6 wow fadeInLeftSlow">
+                            <img src="images/graphics/img2.png">
+                        </div>
+                        <div class="col-md-6 wow fadeInRightSlow">
+                            <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                            <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt bg-3">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInLeftSlow">
+                <div class="itemt bg-4">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/smart-cart.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-lg-6 mb0 wow fadeInRightSlow">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="itemt">
+                            <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                            <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                            <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="itemt">
+                            <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                            <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                            <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="itemt">
+                            <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                            <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                            <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="itemt">
+                            <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                            <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                            <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeInUpSlow">
+                <div class="itemt">
+                    <h3 class="title">HỖ TRỢ DOANH NGHIỆP ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ</h3>
+                    <div class="mb20 txt_right"><img src="images/graphics/img3.png"></div>
+                    <a class="btn-default" href="#">XEM CHI TIẾT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section3 clearfix">
+    <div class="container">
+        <h2 class="title-cate center wow fadeInUpSlow"><span>Giải pháp hỗ trợ doanh nghiệp</span></h2>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 mb30 wow fadeInUpSlow">
+                <div class="bg">
+                    <div class="img"><img src="images/graphics/gp1.png"></div>
+                    <h3 class="title">
+                        Hỗ trợ Doanh nghiệp ứng dụng TMĐT
+                    </h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb30 wow fadeInUpSlow">
+                <div class="bg">
+                    <div class="img"><img src="images/graphics/gp2.png"></div>
+                    <h3 class="title">
+                        Hỗ trợ chi phí chuyển phát
+                    </h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb30 wow fadeInUpSlow">
+                <div class="bg">
+                    <div class="img"><img src="images/graphics/gp3.png"></div>
+                    <h3 class="title">
+                        Triển khai chương trình dán nhãn chuyển phát an toàn
+                    </h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb30 wow fadeInUpSlow">
+                <div class="bg">
+                    <div class="img"><img src="images/graphics/gp4.png"></div>
+                    <h3 class="title">
+                        Hỗ trợ tài chính cho các DN khi tham gia lên các sàn TMĐT
+                    </h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb30 wow fadeInUpSlow">
+                <div class="bg">
+                    <div class="img"><img src="images/graphics/gp5.png"></div>
+                    <h3 class="title">
+                        Xây dựng Nhà phân phối sản phẩm Việt uy tín trên TMĐT
+                    </h3>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb30 wow fadeInUpSlow">
+                <div class="bg">
+                    <div class="img"><img src="images/graphics/gp6.png"></div>
+                    <h3 class="title">
+                        Thúc đẩy thanh toán không dùng tiền mặt
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section4 mb100 clearfix">
+    <div class="container">
+        <h2 class="title-cate center wow fadeInUpSlow"><span>Đối tác</span></h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="bg-white radius15 mb30 wow fadeInLeftSlow">
+                    <h3>Hỗ trợ chuyển phát</h3>
+                    <div class="flex">
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt1.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt2.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt3.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white radius15 mb30 wow fadeInLeftSlow">
+                    <h3>Hỗ trợ thanh toán</h3>
+                    <div class="flex">
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt4.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt5.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt6.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt7.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt8.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt9.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt10.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="bg-white radius15 mb30 wow fadeInRightSlow">
+                    <h3>Hỗ trợ công nghệ</h3>
+                    <div class="flex">
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt11.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt12.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt13.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt14.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white radius15 mb30 wow fadeInRightSlow" style="padding-bottom: 120px;">
+                    <h3>Sàn TMĐT</h3>
+                    <div class="flex">
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt15.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt16.png" alt=""></span>
+                        </div>
+                        <div class="item">
+                            <span><img src="images/graphics/doitac/tt17.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section5 mb100 clearfix">
+    <div class="container">
+        <h2 class="title-cate center"><span>Tin tức</span></h2>
+        <div class="list-article row">
+            <div class="col-md-6 col-lg-4 wow fadeInUpSlow">
+                <article class="article-item">
+                    <div class="box-img">
+                        <a href="" class="thumb_img thumb_5x3">
+                            <img src="images/graphics/doi-tac.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box-text">
+                        <h3 class="title-new"><a href="#">Bộ Trưởng Bộ Công Thương Trần Tuấn Anh làm việc tại Tỉnh Điện Biên</a>
+                        </h3>
+                        <div class="description">
+                            Được BBC đưa vào danh sách bình chọn VĐV xuất sắc năm 2020, nhưng Tyson Fury kêu gọi người hâm mộ đừng bỏ phiếu cho anh
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUpSlow">
+                <article class="article-item">
+                    <div class="box-img">
+                        <a href="" class="thumb_img thumb_5x3">
+                            <img src="images/graphics/doi-tac.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box-text">
+                        <h3 class="title-new"><a href="#">Bộ Trưởng Bộ Công Thương Trần Tuấn Anh làm việc tại Tỉnh Điện Biên</a>
+                        </h3>
+                        <div class="description">
+                            Được BBC đưa vào danh sách bình chọn VĐV xuất sắc năm 2020, nhưng Tyson Fury kêu gọi người hâm mộ đừng bỏ phiếu cho anh
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUpSlow">
+                <article class="article-item">
+                    <div class="box-img">
+                        <a href="" class="thumb_img thumb_5x3">
+                            <img src="images/graphics/doi-tac.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box-text">
+                        <h3 class="title-new"><a href="#">Bộ Trưởng Bộ Công Thương Trần Tuấn Anh làm việc tại Tỉnh Điện Biên</a>
+                        </h3>
+                        <div class="description">
+                            Được BBC đưa vào danh sách bình chọn VĐV xuất sắc năm 2020, nhưng Tyson Fury kêu gọi người hâm mộ đừng bỏ phiếu cho anh
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUpSlow">
+                <article class="article-item">
+                    <div class="box-img">
+                        <a href="" class="thumb_img thumb_5x3">
+                            <img src="images/graphics/doi-tac.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box-text">
+                        <h3 class="title-new"><a href="#">Bộ Trưởng Bộ Công Thương Trần Tuấn Anh làm việc tại Tỉnh Điện Biên</a>
+                        </h3>
+                        <div class="description">
+                            Được BBC đưa vào danh sách bình chọn VĐV xuất sắc năm 2020, nhưng Tyson Fury kêu gọi người hâm mộ đừng bỏ phiếu cho anh
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUpSlow">
+                <article class="article-item">
+                    <div class="box-img">
+                        <a href="" class="thumb_img thumb_5x3">
+                            <img src="images/graphics/doi-tac.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box-text">
+                        <h3 class="title-new"><a href="#">Bộ Trưởng Bộ Công Thương Trần Tuấn Anh làm việc tại Tỉnh Điện Biên</a>
+                        </h3>
+                        <div class="description">
+                            Được BBC đưa vào danh sách bình chọn VĐV xuất sắc năm 2020, nhưng Tyson Fury kêu gọi người hâm mộ đừng bỏ phiếu cho anh
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUpSlow">
+                <article class="article-item">
+                    <div class="box-img">
+                        <a href="" class="thumb_img thumb_5x3">
+                            <img src="images/graphics/doi-tac.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box-text">
+                        <h3 class="title-new"><a href="#">Bộ Trưởng Bộ Công Thương Trần Tuấn Anh làm việc tại Tỉnh Điện Biên</a>
+                        </h3>
+                        <div class="description">
+                            Được BBC đưa vào danh sách bình chọn VĐV xuất sắc năm 2020, nhưng Tyson Fury kêu gọi người hâm mộ đừng bỏ phiếu cho anh
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
     <!--Footer-->
     <footer id="u_footer" class="tp1-footer">
         <div class="ui container">
-            <div class="tp1-footer__wrapper">
-                <div class="tp1-footer--left">
-                    <a href="#" class="u-logo">
-                        <img src="images/graphics/logo2.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="tp1-footer--right">
-                    <div class="tp1-footer__menu">
-                        <div class="tp1-footer__menu-item">
-                            <div class="u-menu-item__title">Về chúng tôi</div>
-                            <div class="u-menu-item__link">
-                                <a href="/">1C Việt Nam</a>
-                                <a href="#">AccountingSuite</a>
-                                <a href="#">Đối tác</a>
+            <div class="tp1-footer__wrapper row flex">
+                <div class="tp1-footer--left col-md-4 mb20">
+                    <div class="lg">
+                        <a href="#" class="u-logo">
+                            <img src="images/graphics/logo2.svg" alt="logo">
+                        </a>
+                        <p>
+                            GoOnline được triển khai theo “Đề án Phát triển nền tảng ứng dụng thương mại điện tử trong các tình huống khẩn cấp” do Cục Thương mại điện tử và Kinh tế số chủ trì, đầu mối, phối hợp với các sàn thương mại điện tử lớn, các doanh nghiệp cung ứng hạ tầng cho Thương mại điện tử
+                        </p>
+                    </div>
+                    <div class="info">
+                        <div class="row">
+                            <div class="col-12">
+                                <i class="fa fa-map-marker" style="font-size: 18px;"></i>25 Ngô Quyền - Quận Hoàn Kiếm - Hà Nội
                             </div>
-                        </div>
-                        <div class="tp1-footer__menu-item">
-                            <div class="u-menu-item__title">Tài liệu</div>
-                            <div class="u-menu-item__link">
-                                <a href="#">Hướng dẫn</a>
-                                <a href="#" target="_blank">Chuyên môn</a>
-                                <a href="#">Bảng giá</a>
+                            <div class="col-lg-6">
+                                <i class="fa fa-envelope"></i>cid@moit.gov.vn
                             </div>
-                        </div>
-                        <div class="tp1-footer__menu-item">
-                            <div class="u-menu-item__title">Liên hệ</div>
-                            <div class="u-menu-item__link">
-                                <a href="#" target="_blank">OF 07 - T10 Times City, 45 Minh Khai, Hà Nội</a>
-                                <a href="#" target="_blank">024 7108 8887 (Sale)</a>
-                                <a href="#" target="_blank">024 7106 6667 (Support)</a>
+                            <div class="col-lg-6">
+                                <i class="fa fa-print"></i>(024) 22202398
+                            </div>
+                            <div class="col-12">
+                                <i class="fa fa-phone"></i>(024) 22202398
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="tp1-footer--center col-md-4 mb20">
+                    <div class="tp1-footer__menu">
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Giới thiệu</div>
+                            <div class="u-menu-item__title">Giải pháp hỗ trợ</div>
+                            <div class="u-menu-item__link">
+                                <a href="/">Hỗ trợ Doanh nghiệp ứng dụng TMĐT</a>
+                                <a href="#">Dán nhãn chuyển phát an toàn</a>
+                                <a href="#">Hỗ trợ chi phí chuyển phát</a>
+                                <a href="#">Nhà phân phối sản phẩm Việt uy tín</a>
+                                <a href="#">Hỗ trợ tài chính Doanh nghiệp ứng dụng TMĐT</a>
+                            </div>
+                        </div>
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Tin tức</div>
+                            <div class="u-menu-item__title">Đăng ký</div>
+                            <div class="u-menu-item__title">FAQs</div>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="tp1-footer--right col-md-4">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29794.401396029454!2d105.77725533955076!3d21.020672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1589798118416!5m2!1sen!2s"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
                 </div>
             </div>
         </div>
         <div class="tp1-footer__copyright">
             <div class="container">
-                <div class="flex">
-                    <div class="txt_copyright">
-                        <img src="images/graphics/copy-right.svg" alt="logo">
-                        &nbsp;&nbsp;
-                        © 2020 All Rights Reserved Design by 1C Viet Nam
-                    </div>
-                    <div class="social">
-                        <a href="#">
-                            <svg class="icon-svg">
-                                <use xlink:href="images/icons/icon.svg#Facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg class="icon-svg">
-                                <use xlink:href="images/icons/icon.svg#youtube"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg class="icon-svg">
-                                <use xlink:href="images/icons/icon.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                Bản quyền thuộc về Trung tâm tin học và công nghệ số (CID) - Cục thương mại điện tử và kinh tế (IDEA)
             </div>
         </div>
     </footer>
@@ -171,35 +537,6 @@
         </svg>
     </a>
 
-    <div class="call_ichloi">
-        <div class="call_ichloi_circle"></div>
-        <div class="call_ichloi_circle_fill"></div>
-        <a href="tel:18000055"
-            onclick="ga('send', 'event', 'Call Online', 'User Call Online', 'User Call Online Complete');">
-            <div class="call_ichloi_icon"></div>
-    </div>
-
-    <div id="popup-trial" class="white-popup mfp-hide">
-        <div class="title-popup">LỜI NHẮN</div>
-        <div class="body clearfix">
-            <div class="form-default">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Tên đầy đủ của bạn">
-                    <span class="error_mess" style="display: none">Lỗi nhập thông tin*</span>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="Địa chỉ Email">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" name="" rows="4" placeholder="Lời nhắn"
-                        style="height: 200px;"></textarea>
-                </div>
-                <div class="">
-                    <button type="submit" class="btn-default full yellow">Gửi tin nhắn</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--Jquery lib-->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
