@@ -53,9 +53,8 @@
                 }
 
                 &.active {
-                    h3 a {
-                        font-weight: bold;
-                        color: var(--green);
+                    a {
+                        border-bottom:1px solid #fff
                     }
                 }
 
